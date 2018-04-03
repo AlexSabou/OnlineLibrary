@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Biblioteca</string>
+    <string name="logo_image">Logo image</string>
+    <string name="logo_utcn">Logo UTCN</string>
+    <string name="hint_email">Email address</string>
+    <string name="hint_pass">Password</string>
+    <string name="text_btn_login">Login</string>
+    <string name="text_btn_add_book">Add</string>
+    <string name="text_register">Sign up here!</string>
+    <string name="text_btn_register">Register</string>
+    <string name="text_login">Login here!</string>
+    <string name="text_app_title">Biblioteca</string>
+    <string name="hint_name">Full name</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Search</string>
+
+    <string name="hint_state">State</string>
+    <string name="hint_location">Location</string>
+
+    <string name="text_btn_password">Change password</string>
+    <string name="text_btn_email">Change email</string>
+
+    <string name="hint_title">Title</string>
+    <string name="hint_author">Author</string>
+    <string name="hint_genre">Genre</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_image_url">Image URL</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

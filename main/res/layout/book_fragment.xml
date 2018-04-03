@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorRedTransparent">
+
+        <ImageView
+            android:id="@+id/iwCover"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iwCover"
+            android:layout_toStartOf="@+id/iwCover"
+            android:text="Title"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iwCover"
+            android:layout_toStartOf="@+id/iwCover"
+            android:text="Author"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/tvGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAuthor"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iwCover"
+            android:layout_toStartOf="@+id/iwCover"
+            android:text="Genre"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/tvStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGenre"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iwCover"
+            android:layout_toStartOf="@+id/iwCover"
+            android:text="Stock"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/swDescription"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/rlHeader"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/rouned_scroll_view">
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/swDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Reserve"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:textColor="@color/colorHint"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:background="@drawable/rounded_black_button"/>
+
+    <RelativeLayout
+        android:id="@+id/rlButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAction"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAddBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add book"
+                android:textColor="@color/colorHint"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginRight="3dp"
+                android:layout_marginEnd="3dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingEnd="20dp"
+                android:background="@drawable/rounded_black_button" />
+
+            <Button
+                android:id="@+id/btnEditStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit stock"
+                android:textColor="@color/colorHint"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingEnd="20dp"
+                android:background="@drawable/rounded_black_button"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlButtons"
+        android:background="@drawable/rouned_scroll_view">
+
+        <TextView
+            android:id="@+id/tvHeaderReservation"
+            android:text="Reservation"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#983d0909"
+            android:layout_below="@id/tvHeaderReservation"/>
+
+        <ListView
+            android:id="@+id/lwReservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLine"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    </RelativeLayout>
+
+    <!--<ScrollView
+        android:id="@+id/swLists"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/swDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHeaderBooks"
+                android:text="Books"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"/>
+
+            <ListView
+                android:id="@+id/lwBooks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:id="@+id/tvReservations"
+                android:textColor="@color/colorWhite"
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    -->
+
+</RelativeLayout>

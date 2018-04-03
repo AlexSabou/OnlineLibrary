@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#6e000000">
+
+
+        <ImageView
+            android:id="@+id/iwBookCover"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/llTextContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/iwBookCover"
+            android:layout_toEndOf="@id/iwBookCover"
+            android:layout_toLeftOf="@id/iwAvailability"
+            android:layout_toStartOf="@id/iwAvailability"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHint"
+                />
+
+            <TextView
+                android:id="@+id/tvGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHint"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iwAvailability"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_action_available"/>
+
+        <TextView
+            android:layout_below="@id/iwBookCover"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBtnLogin"/>
+
+</RelativeLayout>

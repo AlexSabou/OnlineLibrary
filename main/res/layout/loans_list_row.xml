@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#6e000000"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageView
+            android:id="@+id/iwBookCover"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/llTextContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/iwBookCover"
+            android:layout_toEndOf="@id/iwBookCover"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/llButtons"
+            android:layout_toStartOf="@+id/llButtons"
+            android:layout_margin="5dp"
+            >
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHint"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHint"
+                />
+
+            <TextView
+                android:id="@+id/tvState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHint"
+                />
+
+            <TextView
+                android:id="@+id/tvExpireDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHint"
+                />
+
+            <TextView
+                android:id="@+id/tvBookKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHint"
+                />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHint"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/rounded_btn_loan"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlHeader"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true">
+
+            <RadioGroup
+                android:id="@+id/rgState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rbExcellent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:text="Excellent"
+                            android:textColor="@color/colorHint"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/rbVeryGood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/rbExcellent"
+                            android:layout_toEndOf="@id/rbExcellent"
+                            android:text="Very good"
+                            android:textColor="@color/colorHint" />
+
+                        <RadioButton
+                            android:id="@+id/rbGood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/rbVeryGood"
+                            android:layout_toEndOf="@id/rbVeryGood"
+                            android:text="Good"
+                            android:textColor="@color/colorHint"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/rbFair"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/rbGood"
+                            android:layout_toEndOf="@id/rbGood"
+                            android:text="Fair"
+                            android:textColor="@color/colorHint"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/rbPoor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/rbFair"
+                            android:layout_toEndOf="@id/rbFair"
+                            android:text="Poor"
+                            android:textColor="@color/colorHint"
+                            />
+
+                    </RelativeLayout>
+
+
+            </RadioGroup>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_below="@id/rlRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorHint"/>
+
+</RelativeLayout>

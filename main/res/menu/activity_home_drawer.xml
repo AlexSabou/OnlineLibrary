@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menuUser"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search_book"
+            android:icon="@drawable/ic_action_search"
+            android:title="Search book" />
+        <item
+            android:id="@+id/nav_account_info"
+            android:icon="@drawable/ic_action_acc_info"
+            android:title="Account info" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_action_history"
+            android:title="History" />
+    </group>
+
+    <group
+        android:id="@+id/menuLibrarian"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_add_book"
+            android:icon="@drawable/ic_action_add_book"
+            android:title="Add stock"
+            />
+        <item
+            android:id="@+id/nav_books_loaned"
+            android:icon="@drawable/ic_action_loan_book"
+            android:title="Books loaned"
+            />
+    </group>
+
+    <group
+        android:id="@+id/menuAdmin"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_manage_accounts"
+            android:icon="@drawable/ic_action_manage_accounts"
+            android:title="Manage accounts"
+            />
+        <item
+            android:id="@+id/nav_rules"
+            android:icon="@drawable/ic_action_change_rules"
+            android:title="Change rules"
+            />
+    </group>
+
+    <group
+        android:id="@+id/menuLogout"
+        >
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_action_logout"
+            android:title="Log out" />
+    </group>
+
+</menu>

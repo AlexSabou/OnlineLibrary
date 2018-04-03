@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginEnd="45dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Edit stock"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="40dp"/>
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rounded_et_black"
+                android:drawableLeft="@drawable/ic_action_title"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_action_title"
+                android:fontFamily="sans-serif"
+                android:hint="@string/hint_title"
+                android:inputType="text"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rounded_et_black"
+                android:drawableLeft="@drawable/ic_action_person"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_action_person"
+                android:fontFamily="sans-serif"
+                android:hint="@string/hint_author"
+                android:inputType="textPersonName"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp" />
+
+            <!--<EditText
+                android:id="@+id/etGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rounded_et_black"
+                android:drawableLeft="@drawable/ic_action_genre"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_action_genre"
+                android:fontFamily="sans-serif"
+                android:hint="@string/hint_genre"
+                android:inputType="text"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp" />
+
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_et_black"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Genre"
+                    android:textColor="@color/colorHint"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/ic_action_genre"
+                    android:drawablePadding="8dp"
+                    android:drawableStart="@drawable/ic_action_genre"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgGenre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rounded_et_black"
+                android:drawableLeft="@drawable/ic_action_desc"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_action_desc"
+                android:fontFamily="sans-serif"
+                android:hint="@string/hint_description"
+                android:inputType="textMultiLine"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etImageUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rounded_et_black"
+                android:drawableLeft="@drawable/ic_action_url"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_action_url"
+                android:fontFamily="sans-serif"
+                android:hint="@string/hint_image_url"
+                android:inputType="textUri"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnEditStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginStart="45dp"
+                android:background="@drawable/rounded_btn_pink"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorHint"
+                android:textSize="18sp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

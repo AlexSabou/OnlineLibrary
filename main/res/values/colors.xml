@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#9b000a</color>
+    <color name="colorAccent2">#FF4081</color>
+    <color name="colorET">#a06e0007</color>
+    <color name="colorHint">#b4ffffff</color>
+    <color name="colorBtnLogin">#3b0303</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBGAddBook">#6e0007</color>
+    <color name="colorBlackTransparent">#64000000</color>
+    <color name="colorRedTransparent">#645b0000</color>
+    <color name="colorBlackT2">#be000000</color>
+    <color name="colorBlackT3">#bb000000</color>
+
+
+    <color name="colorExcellent">#008b07</color>
+    <color name="colorVeryGood">#66d101</color>
+    <color name="colorGood">#ffd500</color>
+    <color name="colorFair">#be3f00</color>
+    <color name="colorPoor">#9c0000</color>
+    <color name="colorRed">#ff0000</color>
+</resources>
